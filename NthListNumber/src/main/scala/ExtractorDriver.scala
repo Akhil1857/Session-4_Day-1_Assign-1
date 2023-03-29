@@ -1,4 +1,4 @@
-object Driver extends App {
+object ExtractorDriver extends App {
 
   private val objElementExtraction = new NthElementExtraction
   private val list = List(1, 2, 3, 4, 5, 9)
