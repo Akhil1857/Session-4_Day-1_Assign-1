@@ -1,13 +1,15 @@
 object Driver extends App {
+
   private val objElementExtraction = new NthElementExtraction
-  private val list = List(1, 5, 4, 9, 7)
+  private val list = List(1, 2, 3, 4, 5, 9)
   private val toExtract = 2
+
   try {
     if (toExtract > list.length) {
       throw new IndexOutOfBoundsException
     }
     else {
-      val result = objElementExtraction.elementExtraction(list, toExtract)
+      val result = objElementExtraction.elementExtraction[Int](list, toExtract) //Generic Value
       print(result)
     }
 
